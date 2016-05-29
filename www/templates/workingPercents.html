@@ -14,7 +14,7 @@
   </div>
     <ion-list>
       <ion-item ng-repeat="percent in percents" ng-hide="max==NaN">
-        {{percent.name + " percent: " +(max * percent.value).toFixed(1)}}
+        {{percent.name + " percent:"}}  <span id="workset"> {{(max * percent.value).toFixed(1)}}kg</span>
       </ion-item>
     </ion-list>
   </ion-content>
