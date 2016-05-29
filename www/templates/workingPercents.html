@@ -8,13 +8,13 @@
     <label class="item-input-wrapper">
       <input type="number" placeholder="Enter Max in Kilos">
     </label>
-    <button class="button button-small">
+    <button class="button button-small" ng-click="">
       Submit
     </button>
   </div>
     <ion-list>
-      <ion-item>
-        
+      <ion-item ng-repeat="percent in percents">
+        {{percent.amount}}
       </ion-item>
     </ion-list>
   </ion-content>

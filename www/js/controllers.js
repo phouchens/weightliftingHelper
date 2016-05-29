@@ -42,15 +42,17 @@ angular.module('starter.controllers', [])
 })
 
 .controller('workingPercents', function($scope) {
-  $scope.playlists = [
-    { title: 'Reggae', id: 1 },
-    { title: 'Chill', id: 2 },
-    { title: 'Dubstep', id: 3 },
-    { title: 'Indie', id: 4 },
-    { title: 'Rap', id: 5 },
-    { title: 'Cowbell', id: 6 }
+  $scope.percents = [
+    { display: 0,
+      work: 0 }
   ];
-})
-
-.controller('workingPercents', function($scope, $stateParams) {
+  $scope.findWork = function(max, display){
+    for (var i = 50 ; i <= 95; i+=5){
+      display = i;
+      work = max * (i/100);
+    }
+  };
 });
+
+// .controller('workingPercents', function($scope, $stateParams) {
+// });
