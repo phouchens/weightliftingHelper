@@ -6,15 +6,15 @@
     </label>-->
     <div class="item item-input-inset">
     <label class="item-input-wrapper">
-      <input type="number" placeholder="Enter Max in Kilos">
+      <input type="number" placeholder="Enter Max in Kilos"  ng-model="max" >
     </label>
-    <button class="button button-small" ng-click="">
+   <!-- <button class="button button-small" ng-click="findWork()">
       Submit
-    </button>
+    </button> -->
   </div>
     <ion-list>
-      <ion-item ng-repeat="percent in percents">
-        {{percent.amount}}
+      <ion-item ng-repeat="percent in percents" ng-hide="max==NaN">
+        {{percent.name + " percent: " +(max * percent.value).toFixed(1)}}
       </ion-item>
     </ion-list>
   </ion-content>

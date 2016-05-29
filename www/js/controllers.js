@@ -42,16 +42,28 @@ angular.module('starter.controllers', [])
 })
 
 .controller('workingPercents', function($scope) {
-  $scope.percents = [
-    { display: 0,
-      work: 0 }
-  ];
-  $scope.findWork = function(max, display){
-    for (var i = 50 ; i <= 95; i+=5){
-      display = i;
-      work = max * (i/100);
-    }
-  };
+  $scope.work = 0;
+  $scope.percents = [{name: "50",
+                      value: .5},
+                      {name: "55", 
+                      value: .55},
+                      {name: "60" ,
+                       value: .6},
+                       {name: "65",
+                       value: .65},
+                       {name: "70",
+                       value: .7} ,
+                       {name: "75",
+                       value:.75},
+                       {name: "80",
+                        value: .8},
+                        {name: "85",
+                        value: .85,},
+                        {name: "90",
+                        value: .9},
+                        {name: "95",
+                        value : .95} 
+                    ];
 });
 
 // .controller('workingPercents', function($scope, $stateParams) {
