@@ -22,6 +22,17 @@ angular.module('starter', ['ionic', 'starter.controllers'])
   });
 })
 
+  .directive('enhancedInput', function() {
+    return {
+      restrict: 'A',
+      require: 'ngModel',
+      link: function(scope, element, attr, ngModelCtrl) {
+              ngModelCtrl.$parsers.unshift(scope.$eval(attr.toKilo));
+              ngModelCtrl.$formatters.unshift(scope.$eval(attr.fromKilo));
+      }
+    }
+  })
+
 .config(function($stateProvider, $urlRouterProvider) {
   $stateProvider
 
@@ -40,15 +51,7 @@ angular.module('starter', ['ionic', 'starter.controllers'])
       }
     }
   })
-
-  .state('app.browse', {
-      url: '/browse',
-      views: {
-        'menuContent': {
-          templateUrl: 'templates/browse.html'
-        }
-      }
-    })
+  
     .state('app.workingPercents', {
       url: '/workingPercents',
       views: {
@@ -57,17 +60,19 @@ angular.module('starter', ['ionic', 'starter.controllers'])
           controller: 'workingPercents'
         }
       }
+    })
+    
+    .state('app.weightConverter' , {
+      url: '/weightConverter',
+      views: {
+        'menuContent' : {
+          templateUrl: 'templates/weightConverter.html',
+          controller: 'converterCtrl'
+        }
+      }
     });
-
-  // .state('app.single', {
-  //   url: '/playlists/:playlistId',
-  //   views: {
-  //     'menuContent': {
-  //       templateUrl: 'templates/playlist.html',
-  //       controller: 'PlaylistCtrl'
-  //     }
-  //   }
-  // });
   // if none of the above states are matched, use this as the fallback
   $urlRouterProvider.otherwise('/app/workingPercents');
-});
+  });
+
+

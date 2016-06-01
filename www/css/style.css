@@ -1,1 +1,18 @@
 /* Empty. Add your own CSS if you like */
+.mainText {
+    text-align: center
+}
+
+.subText {
+    text-align: center;
+    white-space: pre-wrap;
+}
+
+#workset {
+    font-weight: bold;
+}
+
+#weightConverterFooterText {
+    font-size: small;
+}
+

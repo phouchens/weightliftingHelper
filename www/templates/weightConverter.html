@@ -1,0 +1,27 @@
+<ion-view view-title="Weight Converter">
+  <ion-content>
+  <div class="item item-divider">
+   <h1 class="mainText"> Convert kilos</h1>
+   <div class="subText">Math is Hard, This does your conversions for you.</div>
+  </div>
+  <div id="conversion" ng-controller="converterCtrl">
+     <!-- kilos -->
+ 
+  <label class="item item-input item-stacked-label">
+    <span class="input-label">Kilograms</span>
+    <input type="number" ng-model="kilos" enhanced-input to-kilo="kiloToKilo" from-kilo="kiloToKilo">
+  </label>
+  
+  <!-- pounds -->
+  
+  <label class="item item-input item-stacked-label">
+    <span class="input-label">Pounds</span>
+    <input type="number" ng-model="kilos" enhanced-input to-kilo="lbsToKilo" from-kilo="kiloToLbs"></input> 
+  </label>
+  </div>
+ 
+  <div class="item item-divider">
+   <span id="weightConverterFooterText"> Weightlifting Helper<span?
+  </div>
+  </ion-content>
+</ion-view>

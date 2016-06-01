@@ -1,16 +1,14 @@
 <ion-view view-title="Weightlifting Helper">
   <ion-content>
-   <!-- <label class="item item-input">
-      <span class="input-label">Enter Working Max in Kilograms</span>
-      <input type="number"> </input>
-    </label>-->
+   <div class="item item-divider">
+   <h1 class="mainText"> Work Weight</h1>
+   <div class="subText">To get stronger, you gotta work the numbers. Leave your calculator at home, we got you covered.</div>
+  </div>
     <div class="item item-input-inset">
     <label class="item-input-wrapper">
       <input type="number" placeholder="Enter Max in Kilos"  ng-model="max" >
     </label>
-   <!-- <button class="button button-small" ng-click="findWork()">
-      Submit
-    </button> -->
+
   </div>
     <ion-list>
       <ion-item ng-repeat="percent in percents" ng-hide="max==NaN">

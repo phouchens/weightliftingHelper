@@ -44,27 +44,40 @@ angular.module('starter.controllers', [])
 .controller('workingPercents', function($scope) {
   $scope.work = 0;
   $scope.percents = [{name: "50",
-                      value: .5},
+                      value: 0.5},
                       {name: "55", 
-                      value: .55},
+                      value: 0.55},
                       {name: "60" ,
-                       value: .6},
+                       value: 0.6},
                        {name: "65",
-                       value: .65},
+                       value: 0.65},
                        {name: "70",
-                       value: .7} ,
+                       value: 0.7} ,
                        {name: "75",
-                       value:.75},
+                       value: 0.75},
                        {name: "80",
-                        value: .8},
+                        value: 0.8},
                         {name: "85",
-                        value: .85,},
+                        value: 0.85,},
                         {name: "90",
-                        value: .9},
+                        value: 0.9},
                         {name: "95",
-                        value : .95} 
+                        value : 0.95} 
                     ];
-});
+})
 
-// .controller('workingPercents', function($scope, $stateParams) {
-// });
+
+.controller('converterCtrl', function($scope, $filter) {
+$scope.kilo = 0;
+
+$scope.kiloToKilo = function(val){return val;};
+
+$scope.lbsToKilo = function(val){
+  return (val/2.2);
+};
+
+$scope.kiloToLbs = function(val){
+  return (val * 2.2);
+};
+
+});
