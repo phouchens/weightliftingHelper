@@ -81,3 +81,11 @@ $scope.kiloToLbs = function(val){
 };
 
 });
+
+
+//check scrolling? scroll lock?
+
+//rethink home page?
+
+/// remove excess? 
+

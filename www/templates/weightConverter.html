@@ -1,8 +1,8 @@
-<ion-view view-title="Weight Converter">
+<ion-view class="mainHeader" view-title="Weightlifting Helper">
   <ion-content>
   <div class="item item-divider">
    <h1 class="mainText"> Convert kilos</h1>
-   <div class="subText">Math is Hard, This does your conversions for you.</div>
+   <div class="subText">Math is Hard, We will do your conversions for you.</div>
   </div>
   <div id="conversion" ng-controller="converterCtrl">
      <!-- kilos -->
@@ -19,9 +19,9 @@
     <input type="number" ng-model="kilos" enhanced-input to-kilo="lbsToKilo" from-kilo="kiloToLbs"></input> 
   </label>
   </div>
- 
-  <div class="item item-divider">
-   <span id="weightConverterFooterText"> Weightlifting Helper<span?
-  </div>
+    
   </ion-content>
+    <div class="bar bar-footer bar-stable">
+  <div class="footerTitle">Weightlifting Helper</div>
+</div>
 </ion-view>

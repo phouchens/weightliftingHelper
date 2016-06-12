@@ -1,18 +1,25 @@
 /* Empty. Add your own CSS if you like */
 .mainText {
-    text-align: center
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
 }
 
 .subText {
     text-align: center;
     white-space: pre-wrap;
+    font-family: 'Poppins', sans-serif;
 }
 
 #workset {
     font-weight: bold;
 }
 
-#weightConverterFooterText {
+.footerTitle {
     font-size: small;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Syncopate', sans-serif;
 }
 

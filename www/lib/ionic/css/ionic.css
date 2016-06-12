@@ -4010,7 +4010,8 @@ a.subdued {
     white-space: nowrap;
     font-size: 17px;
     font-weight: 500;
-    line-height: 44px; }
+    line-height: 44px;
+    font-family: 'Syncopate', sans-serif; }
     .bar .title.title-left {
       text-align: left; }
     .bar .title.title-right {
