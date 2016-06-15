@@ -73,11 +73,11 @@ $scope.kilo = 0;
 $scope.kiloToKilo = function(val){return val;};
 
 $scope.lbsToKilo = function(val){
-  return (val/2.2);
+  return (val/2.20462262);
 };
 
 $scope.kiloToLbs = function(val){
-  return (val * 2.2);
+  return (val * 2.20462262);
 };
 
 });
