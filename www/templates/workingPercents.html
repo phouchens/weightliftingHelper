@@ -1,5 +1,5 @@
 <ion-view class="mainHeader" view-title="Weightlifting Helper">
-  <ion-content>
+  <ion-content class="has-footer" >
    <div class="item item-divider">
    <h1 class="mainText"> Work Percentages</h1>
    <div class="subText">To get stronger, you gotta work the numbers. Leave the calculator at home, we got you covered.</div>
@@ -10,16 +10,16 @@
     </label>
 
   </div>
-    <ion-list>
+    <ion-list >
       <ion-item ng-repeat="percent in percents" ng-hide="max==NaN">
         {{percent.name + " percent:"}}  <span id="workset"> {{(max * percent.value).toFixed(1)}}kg</span>
       </ion-item>
     </ion-list>
   </ion-content>
-      <div class="bar bar-footer bar-stable">
-  <div class="footerTitle">Weightlifting Helper</div>
-</div>
-</ion-view>
 
+</ion-view>
+     <div class="bar bar-footer bar-stable">
+        <div class="footerTitle">Weightlifting Helper</div>
+    </div>
 
 
