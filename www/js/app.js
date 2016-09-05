@@ -57,13 +57,13 @@ angular.module('starter', ['ionic', 'starter.controllers']).config(function ($io
       }
     }
   })
-  
+
   .state('app.recordsDetails', {
     url: '/recordsDetails',
     templateUrl: 'templates/recordsDetails.html',
     controller: 'recordedsDetailsCtrl'
   })
-  
+
     .state('app.workingPercents', {
       url: '/workingPercents',
       views: {
@@ -73,7 +73,7 @@ angular.module('starter', ['ionic', 'starter.controllers']).config(function ($io
         }
       }
     })
-    
+
     .state('app.weightConverter' , {
       url: '/weightConverter',
       views: {
@@ -84,7 +84,5 @@ angular.module('starter', ['ionic', 'starter.controllers']).config(function ($io
       }
     });
   // if none of the above states are matched, use this as the fallback
-  $urlRouterProvider.otherwise('/app/workingPercents');
+  $urlRouterProvider.otherwise('/workingPercents');
   });
-
-

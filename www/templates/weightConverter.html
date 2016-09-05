@@ -1,27 +1,27 @@
-<ion-view class="mainHeader" view-title="Weightlifting Helper">
-    <ion-content>
-        <div class="item item-divider">
-            <h1 class="mainText"> Convert kilos</h1>
-            <div class="subText">Math is Hard, We will do your conversions for you.</div>
-        </div>
-        <div id="conversion" ng-controller="converterCtrl">
-            <!-- kilos -->
-
-            <label class="item item-input item-stacked-label">
-                <span class="input-label">Kilograms</span>
-                <input type="number" ng-model="kilos" enhanced-input to-kilo="kiloToKilo" from-kilo="kiloToKilo">
-            </label>
-
-            <!-- pounds -->
-
-            <label class="item item-input item-stacked-label">
-                <span class="input-label">Pounds</span>
-                <input type="number" ng-model="kilos" enhanced-input to-kilo="lbsToKilo" from-kilo="kiloToLbs"></input>
-            </label>
-        </div>
-
-    </ion-content>
-    <div class="bar bar-footer bar-stable">
-        <div class="footerTitle">Weightlifting Helper</div>
+<ion-view class="mainHeader" view-title="Weightlifting Helper" >
+  <ion-content class="has-header has-footer">
+    <div class="item item-divider">
+      <h1 class="mainText"> Convert kilos</h1>
+      <div class="subText">Math is Hard, We will do your conversions for you.</div>
     </div>
+    <div id="conversion" ng-controller="converterCtrl">
+      <!-- kilos -->
+
+      <label class="item item-input item-stacked-label">
+        <span class="input-label">Kilograms</span>
+        <input type="number" ng-model="kilos" enhanced-input to-kilo="kiloToKilo" from-kilo="kiloToKilo">
+      </label>
+
+      <!-- pounds -->
+
+      <label class="item item-input item-stacked-label">
+        <span class="input-label">Pounds</span>
+        <input type="number" ng-model="kilos" enhanced-input to-kilo="lbsToKilo" from-kilo="kiloToLbs"></input>
+      </label>
+    </div>
+
+  </ion-content>
+  <div class="bar bar-footer bar-stable">
+    <div class="footerTitle">Weightlifting Helper</div>
+  </div>
 </ion-view>
